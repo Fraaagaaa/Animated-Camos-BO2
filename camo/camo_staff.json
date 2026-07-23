@@ -8,23 +8,23 @@
                 {
                     "materialOverrides": [
                         {
-                            "baseMaterial": "mc/mtl_t6_wpn_pistol_m1911_camo1",
-                            "camoMaterial": "camo/camo_m1911/mtl_ac_m1911"
+                            "baseMaterial": "mc/mtl_t6_wpn_zmb_staff",
+                            "camoMaterial": "camo/camo_staff/mtl_ac_staff"
                         },
                         {
-                            "baseMaterial": "mc/mtl_t6_wpn_pistol_m1911_thermal",
-                            "camoMaterial": "camo/camo_m1911/mtl_ac_m1911"
+                            "baseMaterial": "mc/mtl_t6_wpn_zmb_staff_upg",
+                            "camoMaterial": "camo/camo_staff/mtl_ac_staff"
                         },
                         {
-                            "baseMaterial": "mc/mtl_t6_wpn_pistol_m1911",
-                            "camoMaterial": "camo/camo_m1911/mtl_ac_m1911"
+                            "baseMaterial": "mc/mtl_t6_wpn_zmb_staff_revive",
+                            "camoMaterial": "camo/camo_staff/mtl_ac_staff"
                         }
                     ],
                     "shaderConsts": [
-                        2.0,
-                        2.0,
+                        1.0,
+                        1.0,
                         0.0,
-                        0.10999999940395355,
+                        1.0,
                         0.0,
                         0.0,
                         0.0,
@@ -32,7 +32,23 @@
                     ],
                     "useColorMap": false,
                     "useNormalMap": true,
-                    "useSpecularMap": false
+                    "useSpecularMap": true
+                },
+                {
+                    "materialOverrides": [],
+                    "shaderConsts": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "useColorMap": false,
+                    "useNormalMap": true,
+                    "useSpecularMap": true
                 }
             ]
         }

@@ -12,7 +12,15 @@
                             "camoMaterial": "camo/camo_m14/mtl_ac_m14"
                         },
                         {
-                            "baseMaterial": "mc/mtl_t6_wpn_ar_m14",
+                            "baseMaterial": "mc/mtl_t6_wpn_ar_m14_2",
+                            "camoMaterial": "camo/camo_m14/mtl_ac_m14"
+                        },
+                        {
+                            "baseMaterial": "mc/mtl_t6_wpn_ar_m14_3",
+                            "camoMaterial": "camo/camo_m14/mtl_ac_m14"
+                        },
+                        {
+                            "baseMaterial": "mc/mtl_weapon_m14_scope_rail",
                             "camoMaterial": "camo/camo_m14/mtl_ac_m14"
                         }
                     ],
