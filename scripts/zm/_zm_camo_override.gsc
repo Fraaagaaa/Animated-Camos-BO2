@@ -60,6 +60,8 @@ get_camo_based_on_weapon(weapon)
         return 39;
     else if(IsSubStr(weapon, "m14"))
         return 40;
+    else if(IsSubStr(weapon, "m1911"))
+        return 41;
 
 
 
