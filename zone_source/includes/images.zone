@@ -11,4 +11,6 @@ image,m14ember
 image,m14heat
 image,m1911ember
 image,m1911heat
+image,mp40ember
+image,mp40heat
 script,scripts/zm/_zm_camo_override.gsc
