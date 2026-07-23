@@ -7,7 +7,7 @@
 init()
 {
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "get_pack_a_punch_weapon_options"), ::get_pack_a_punch_weapon_options);
-	replaceFunc(getfunction("maps/mp/gametypes_zm/_weapons", "weapon_give"), ::weapon_give);
+	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "weapon_give"), ::weapon_give);
 }
 
 get_pack_a_punch_weapon_options( weapon )
@@ -57,6 +57,7 @@ get_pack_a_punch_weapon_options( weapon )
 
 get_camo_based_on_weapon(weapon)
 {
+    // Add here the new weapons
     if(IsSubStr(weapon, "an94"))
         return 39;
     else if(IsSubStr(weapon, "m14"))
@@ -64,7 +65,7 @@ get_camo_based_on_weapon(weapon)
     else if(IsSubStr(weapon, "m1911"))
         return 41;
     else if(IsSubStr(weapon, "staff"))
-        return 41;
+        return 42;
 
 
 
@@ -77,13 +78,6 @@ get_camo_based_on_weapon(weapon)
 
 weapon_give( weapon, is_upgrade, magic_box, nosound )
 {
-    PrintLn("weapon_give");
-    PrintLn("weapon_give");
-    PrintLn("weapon_give");
-    PrintLn("weapon_give");
-    PrintLn("weapon_give");
-    PrintLn("weapon_give");
-    PrintLn("weapon_give");
     primaryweapons = self getweaponslistprimaries();
     current_weapon = self getcurrentweapon();
     current_weapon = self maps\mp\zombies\_zm_weapons::switch_from_alt_weapon( current_weapon );
