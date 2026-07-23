@@ -7,7 +7,7 @@
     "constants": [
         {
             "literal": [
-                4.0,
+                17.0,
                 0.0,
                 0.0,
                 1.0
@@ -16,7 +16,7 @@
         },
         {
             "literal": [
-                10.0,
+                17.0,
                 0.0,
                 0.0,
                 1.0
@@ -25,7 +25,7 @@
         },
         {
             "literal": [
-                0.28999999165534973,
+                4.079999923706055,
                 0.0,
                 0.0,
                 1.0
@@ -34,7 +34,7 @@
         },
         {
             "literal": [
-                1.5,
+                4.079999923706055,
                 0.0,
                 0.0,
                 1.0
@@ -43,7 +43,7 @@
         },
         {
             "literal": [
-                2.9600000381469727,
+                1.0,
                 0.0,
                 0.0,
                 1.0
@@ -61,8 +61,8 @@
         },
         {
             "literal": [
-                -0.029999999329447746,
-                0.009999999776482582,
+                -0.015,
+                -0.015,
                 0.0,
                 1.0
             ],
@@ -70,7 +70,7 @@
         },
         {
             "literal": [
-                2.0,
+                0.5,
                 0.0,
                 0.0,
                 1.0
@@ -88,8 +88,8 @@
         },
         {
             "literal": [
-                0.05000000074505806,
-                0.019999999552965164,
+                -0.015,
+                -0.015,
                 0.0,
                 1.0
             ],
@@ -248,9 +248,11 @@
     },
     "textures": [
         {
-            "image": "ember",
+            "image": "m14ember",
             "isMatureContent": false,
-            "name": "Ember",
+            "nameEnd": "r",
+            "nameHash": 123232637,
+            "nameStart": "E",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -261,7 +263,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "ignoretexture",
+            "image": "ac_nml",
             "isMatureContent": false,
             "name": "Camo_Detail_Map",
             "samplerState": {
@@ -274,7 +276,7 @@
             "semantic": "normalMap"
         },
         {
-            "image": "ignoretexture",
+            "image": "~-gcamo_code_spc",
             "isMatureContent": false,
             "name": "Weapon_Specular_Map",
             "samplerState": {
@@ -287,9 +289,11 @@
             "semantic": "color2Map"
         },
         {
-            "image": "reveal",
+            "image": "ac_reveal",
             "isMatureContent": false,
-            "name": "ignoretexture",
+            "nameEnd": "p",
+            "nameHash": 886589909,
+            "nameStart": "R",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -300,7 +304,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "ignoretexture",
+           "image": "camo_code_nml",
             "isMatureContent": false,
             "name": "Weapon_Normal_Map",
             "samplerState": {
@@ -313,7 +317,7 @@
             "semantic": "color1Map"
         },
         {
-            "image": "ignoretexture",
+            "image": "ac_gloss",
             "isMatureContent": false,
             "name": "SpecularAndGloss",
             "samplerState": {
@@ -326,7 +330,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "ignoretexture",
+            "image": "ac_col",
             "isMatureContent": false,
             "name": "colorMap",
             "samplerState": {
@@ -339,9 +343,11 @@
             "semantic": "colorMap"
         },
         {
-            "image": "ignoretexture",
+            "image": "m14heat",
             "isMatureContent": false,
-            "name": "Heat_Map",
+            "nameEnd": "p",
+            "nameHash": 3837378363,
+            "nameStart": "H",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,

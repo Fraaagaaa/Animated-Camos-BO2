@@ -1,0 +1,24 @@
+>game,T6
+
+script,scripts/zm/_zm_camo_override.gsc
+
+// camo table
+stringtable,mp/weaponoptions_zm.csv
+
+// weapon camo override ( for applying custom camo on the weapon )
+camo,camo_an94
+camo,camo_m14
+//camo,camo_staff
+
+image,ac_reveal
+image,ac_col
+image,ac_gloss
+image,ac_nml
+
+// an94
+image,an94ember
+image,an94heat
+image,m14ember
+image,m14heat
+material,camo/camo_an94/mtl_ac_an94
+material,camo/camo_m14/mtl_ac_m14
