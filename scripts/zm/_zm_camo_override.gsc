@@ -50,7 +50,6 @@ get_pack_a_punch_weapon_options( weapon )
     if ( reticle_index == letter_e_reticle_index )
         reticle_color_index = green_reticle_color_index;
 
-    self iprintln("w: " + weapon + " | index: " + camo_index);
     self.pack_a_punch_weapon_options[weapon] = self calcweaponoptions( camo_index, lens_index, reticle_index, reticle_color_index );
     return self.pack_a_punch_weapon_options[weapon];
 }
@@ -68,6 +67,8 @@ get_camo_based_on_weapon(weapon)
         return 42;
     else if(IsSubStr(weapon, "mp40"))
         return 43;
+    else if(IsSubStr(weapon, "raygun"))
+        return 44;
 
 
 
