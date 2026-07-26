@@ -8,6 +8,7 @@ init()
 {
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "get_pack_a_punch_weapon_options"), ::get_pack_a_punch_weapon_options);
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "weapon_give"), ::weapon_give);
+	replaceFunc(getfunction("maps/mp/zombies/_zm_utility", "give_start_weapon"), ::give_start_weapon);
 }
 
 get_pack_a_punch_weapon_options( weapon )
@@ -69,6 +70,8 @@ get_camo_based_on_weapon(weapon)
         return 43;
     else if(IsSubStr(weapon, "raygun"))
         return 44;
+    else if(IsSubStr(weapon, "mc96"))
+        return 45;
 
 
 
@@ -224,4 +227,13 @@ weapon_give( weapon, is_upgrade, magic_box, nosound )
     }
 
     self play_weapon_vo( weapon, magic_box );
+}
+
+give_start_weapon( switch_to_weapon )
+{
+    self giveweapon( level.start_weapon, 0, self get_pack_a_punch_weapon_options( level.start_weapon ) );
+    self givestartammo( level.start_weapon );
+
+    if ( isdefined( switch_to_weapon ) && switch_to_weapon )
+        self switchtoweapon( level.start_weapon );
 }

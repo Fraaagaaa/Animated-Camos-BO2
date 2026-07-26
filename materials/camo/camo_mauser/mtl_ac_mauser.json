@@ -88,8 +88,8 @@
         },
         {
             "literal": [
-                0.1,
-                0.1,
+                -0.015,
+                -0.015,
                 0.0,
                 1.0
             ],
@@ -248,7 +248,7 @@
     },
     "textures": [
         {
-            "image": "m14ember",
+            "image": "mauserember",
             "isMatureContent": false,
             "nameEnd": "r",
             "nameHash": 123232637,
@@ -343,7 +343,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "m14heat",
+            "image": "mauserheat",
             "isMatureContent": false,
             "nameEnd": "p",
             "nameHash": 3837378363,
