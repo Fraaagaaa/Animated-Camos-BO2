@@ -17,4 +17,5 @@ image,mk2ember
 image,mk2heat
 image,mauserember
 image,mauserheat
-script,scripts/zm/_zm_camo_override.gsc
+image,slowgunember
+image,slowgunheat

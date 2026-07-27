@@ -4,3 +4,6 @@ include,includes/images
 include,includes/materials
 
 stringtable,mp/weaponoptions_zm.csv
+
+script,scripts/zm/_zm_camo_override.gsc
+script,scripts/zm/zm_tomb/ac_origins.gsc
