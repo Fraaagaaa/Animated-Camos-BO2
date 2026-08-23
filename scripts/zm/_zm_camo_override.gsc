@@ -85,6 +85,10 @@ get_camo_based_on_weapon(weapon)
         return 48;
     else if(IsSubStr(weapon, "870"))
         return 49;
+    else if(IsSubStr(weapon, "ak") && IsSubStr(level.script, "tomb"))
+        return 50;
+    else if(IsSubStr(weapon, "stg"))
+        return 51;
 
 
 

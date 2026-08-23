@@ -2,7 +2,7 @@
 include,includes/camos
 include,includes/images
 include,includes/materials
-//include,includes/models
+include,includes/models
 
 stringtable,mp/weaponoptions_zm.csv
 
