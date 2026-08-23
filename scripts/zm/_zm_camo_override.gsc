@@ -83,6 +83,8 @@ get_camo_based_on_weapon(weapon)
         return 47;
     else if(IsSubStr(weapon, "scar"))
         return 48;
+    else if(IsSubStr(weapon, "870"))
+        return 49;
 
 
 
