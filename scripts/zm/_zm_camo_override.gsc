@@ -9,6 +9,8 @@
 #include maps\mp\zombies\_zm_weapons;
 init()
 {
+    level.animated_camos = true;
+    level.custom_camos = true;
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "get_pack_a_punch_weapon_options"), ::get_pack_a_punch_weapon_options);
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "weapon_give"), ::weapon_give);
 	replaceFunc(getfunction("maps/mp/zombies/_zm_utility", "give_start_weapon"), ::give_start_weapon);
@@ -77,6 +79,10 @@ get_camo_based_on_weapon(weapon)
         return 45;
     else if(IsSubStr(weapon, "slow"))
         return 46;
+    else if(IsSubStr(weapon, "uzi"))
+        return 47;
+    else if(IsSubStr(weapon, "scar"))
+        return 48;
 
 
 
