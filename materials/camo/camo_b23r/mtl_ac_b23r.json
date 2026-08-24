@@ -7,7 +7,7 @@
     "constants": [
         {
             "literal": [
-                5.0,
+                17.0,
                 0.0,
                 0.0,
                 1.0
@@ -16,7 +16,7 @@
         },
         {
             "literal": [
-                5.0,
+                17.0,
                 0.0,
                 0.0,
                 1.0
@@ -110,7 +110,7 @@
         "10",
         "CASTS_SHADOW"
     ],
-    "layeredSurfaceTypes": 536870919,
+    "layeredSurfaceTypes": 536870925,
     "sortKey": 4,
     "stateBits": [
         {
@@ -239,8 +239,8 @@
         4
     ],
     "stateFlags": 121,
-    "surfaceFlags": 7340032,
-    "surfaceTypeBits": 64,
+    "surfaceFlags": 13631488,
+    "surfaceTypeBits": 4096,
     "techniqueSet": "mc_sw4_3d_weapon_camo_anim_glow_930950j2",
     "textureAtlas": {
         "columns": 1,
@@ -248,7 +248,7 @@
     },
     "textures": [
         {
-            "image": "mistyember",
+            "image": "b23rember",
             "isMatureContent": false,
             "nameEnd": "r",
             "nameHash": 123232637,
@@ -263,7 +263,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "viewarm_zom_farmergirl_n",
+            "image": "ac_nml",
             "isMatureContent": false,
             "name": "Camo_Detail_Map",
             "samplerState": {
@@ -276,7 +276,7 @@
             "semantic": "normalMap"
         },
         {
-            "image": "~~-gviewarm_zom_farmergirl_s-~0fe53140",
+            "image": "~-gcamo_code_spc",
             "isMatureContent": false,
             "name": "Weapon_Specular_Map",
             "samplerState": {
@@ -289,7 +289,7 @@
             "semantic": "color2Map"
         },
         {
-            "image": "ac_reveal_misty",
+            "image": "ac_reveal",
             "isMatureContent": false,
             "nameEnd": "p",
             "nameHash": 886589909,
@@ -330,7 +330,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "~-gviewarm_zom_farmergirl_c",
+            "image": "ac_col",
             "isMatureContent": false,
             "name": "colorMap",
             "samplerState": {
@@ -343,7 +343,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "mistyheat",
+            "image": "b23rheat",
             "isMatureContent": false,
             "nameEnd": "p",
             "nameHash": 3837378363,
