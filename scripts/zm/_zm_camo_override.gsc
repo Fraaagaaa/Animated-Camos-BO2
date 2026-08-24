@@ -89,6 +89,8 @@ get_camo_based_on_weapon(weapon)
         return 50;
     else if(IsSubStr(weapon, "stg"))
         return 51;
+    else if(IsSubStr(weapon, "ballista"))
+        return 52;
 
 
 
