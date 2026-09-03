@@ -10,6 +10,8 @@ set MOD_BASE=%cd%
 -v ^
 --load "%GAME_FOLDER%\zone\all\zm_transit.ff" ^
 --load "%GAME_FOLDER%\zone\all\zm_prison.ff" ^
+--load "%GAME_FOLDER%\zone\all\zm_prison_patch.ff" ^
+--load "%GAME_FOLDER%\zone\all\so_zclassic_zm_prison.ff" ^
 --load "%GAME_FOLDER%\zone\all\zm_buried.ff" ^
 --load "%GAME_FOLDER%\zone\all\zm_tomb.ff" ^
 --load "%GAME_FOLDER%\zone\all\zm_highrise.ff" ^
