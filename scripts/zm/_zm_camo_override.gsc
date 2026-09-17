@@ -102,6 +102,8 @@ get_camo_based_on_weapon(weapon)
         return 56;
     else if(IsSubStr(weapon, "lsat"))
         return 57;
+    else if(IsSubStr(weapon, "mp5"))
+        return 58;
 
 
 

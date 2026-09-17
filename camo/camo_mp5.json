@@ -1,0 +1,380 @@
+{
+    "_game": "t6",
+    "_type": "weaponCamo",
+    "_version": 1,
+    "camoMaterials": [
+        {
+            "materials": [
+                {
+                    "materialOverrides": [
+                        {
+                            "baseMaterial": "mc/mtl_t6_wpn_smg_mp5_camo1",
+                            "camoMaterial": "camo/camo_mp5/mtl_ac_mp5"
+                        },
+                        {
+                            "baseMaterial": "mc/mtl_t6_wpn_smg_mp5_camo2",
+                            "camoMaterial": "camo/camo_mp5/mtl_ac_mp5"
+                        }
+                    ],
+                    "shaderConsts": [
+                        5.0,
+                        5.0,
+                        0.4000000059604645,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "useColorMap": false,
+                    "useNormalMap": true,
+                    "useSpecularMap": true
+                },
+                {
+                    "materialOverrides": [],
+                    "shaderConsts": [
+                        1.0,
+                        1.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "useColorMap": false,
+                    "useNormalMap": true,
+                    "useSpecularMap": false
+                }
+            ]
+        }
+    ],
+    "camoSets": [
+        {
+            "patternCamoImage": "t6_camo_devgru_pattern",
+            "patternOffset": {
+                "x": 0.14000000059604645,
+                "y": 0.0
+            },
+            "patternScale": 0.6600000262260437,
+            "solidCamoImage": "t6_camo_devgru_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_atacs_pattern",
+            "patternOffset": {
+                "x": 0.1599999964237213,
+                "y": 0.0
+            },
+            "patternScale": 1.7100000381469727,
+            "solidCamoImage": "t6_camo_atacs_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_erdl_pattern",
+            "patternOffset": {
+                "x": 0.30000001192092896,
+                "y": 0.0
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_erdl_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_siberia_pattern",
+            "patternOffset": {
+                "x": 0.5699999928474426,
+                "y": 0.0
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_siberia_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_choco_pattern",
+            "patternOffset": {
+                "x": 0.2199999988079071,
+                "y": 0.05999999865889549
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_choco_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_tiger_blue_pattern",
+            "patternOffset": {
+                "x": 0.44999998807907104,
+                "y": 0.3199999928474426
+            },
+            "patternScale": 3.0,
+            "solidCamoImage": "t6_camo_tiger_blue_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_bloodshot_pattern",
+            "patternOffset": {
+                "x": 0.5099999904632568,
+                "y": 0.0
+            },
+            "patternScale": 1.0,
+            "solidCamoImage": "t6_camo_bloodshot_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_ghostex_delta6_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_ghostex_delta6_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_kryptek_typhon_pattern",
+            "patternOffset": {
+                "x": 0.6899999976158142,
+                "y": 0.8999999761581421
+            },
+            "patternScale": 1.0,
+            "solidCamoImage": "t6_camo_kryptek_typhon_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_blossom_pattern",
+            "patternOffset": {
+                "x": 0.18000000715255737,
+                "y": 0.3799999952316284
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_blossom_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_artofwar_pattern",
+            "patternOffset": {
+                "x": 0.7900000214576721,
+                "y": 0.0
+            },
+            "patternScale": 0.9200000166893005,
+            "solidCamoImage": "t6_camo_artofwar_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_ronin_pattern",
+            "patternOffset": {
+                "x": 0.550000011920929,
+                "y": 0.25999999046325684
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_ronin_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_skulls_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.09000000357627869
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_skulls_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_bo2collectors_pattern",
+            "patternOffset": {
+                "x": 0.9800000190734863,
+                "y": 0.7599999904632568
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "dark_grey_swatch"
+        },
+        {
+            "patternCamoImage": "t6_camo_elite_pattern",
+            "patternOffset": {
+                "x": 0.25999999046325684,
+                "y": 0.8399999737739563
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_elite_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_viper_pattern",
+            "patternOffset": {
+                "x": 0.3700000047683716,
+                "y": 0.47999998927116394
+            },
+            "patternScale": 3.0,
+            "solidCamoImage": "t6_camo_viper_pattern"
+        },
+        {
+            "patternCamoImage": "t6_camo_mango_pattern",
+            "patternOffset": {
+                "x": 0.5,
+                "y": 0.3799999952316284
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_mango_pattern"
+        },
+        {
+            "patternCamoImage": "t6_camo_ukpunk_pattern",
+            "patternOffset": {
+                "x": 0.7900000214576721,
+                "y": 0.7200000286102295
+            },
+            "patternScale": 4.0,
+            "solidCamoImage": "t6_camo_ukpunk_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_benjamins_pattern",
+            "patternOffset": {
+                "x": 0.3199999928474426,
+                "y": 0.10999999940395355
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_benjamins_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_dayofdead_pattern",
+            "patternOffset": {
+                "x": 0.3700000047683716,
+                "y": 0.0
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_dayofdead_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_graffiti_pattern",
+            "patternOffset": {
+                "x": 0.6000000238418579,
+                "y": 0.6499999761581421
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_graffiti_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_kawaii_pattern",
+            "patternOffset": {
+                "x": 0.47999998927116394,
+                "y": 0.47999998927116394
+            },
+            "patternScale": 3.0,
+            "solidCamoImage": "t6_camo_kawaii_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_partyrock_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_partyrock_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_zombies_pattern",
+            "patternOffset": {
+                "x": 0.3700000047683716,
+                "y": 0.05999999865889549
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_zombies_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_nevada_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 1.3200000524520874,
+            "solidCamoImage": "t6_camo_nevada_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_sahara_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 1.6100000143051147,
+            "solidCamoImage": "t6_camo_sahara_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_urban_russia_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 1.309999942779541,
+            "solidCamoImage": "t6_camo_urban_russia_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_flecktarn_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 0.949999988079071,
+            "solidCamoImage": "t6_camo_flecktarn_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_flora_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 1.100000023841858,
+            "solidCamoImage": "t6_camo_flora_solid"
+        },
+        {
+            "patternCamoImage": "t6_camo_tiger_jungle_pattern",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 1.0099999904632568,
+            "solidCamoImage": "t6_camo_tiger_jungle_solid"
+        },
+        {
+            "patternCamoImage": "camo_comic_col",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_comic_alt_col"
+        },
+        {
+            "patternCamoImage": "camo_mtx3_aqua_pat",
+            "patternOffset": {
+                "x": 0.5099999904632568,
+                "y": 0.0
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "camo_mtx3_aqua_pat"
+        },
+        {
+            "patternCamoImage": "camo_mtx3_breach_pat",
+            "patternOffset": {
+                "x": 0.0,
+                "y": 0.23999999463558197
+            },
+            "patternScale": 1.0,
+            "solidCamoImage": "camo_mtx3_breach_pat"
+        },
+        {
+            "patternCamoImage": "camo_mtx3_coyote_pat",
+            "patternOffset": {
+                "x": 0.44999998807907104,
+                "y": 0.3100000023841858
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "camo_mtx3_coyote_pat"
+        },
+        {
+            "patternCamoImage": "camo_mtx3_zulu_pat",
+            "patternOffset": {
+                "x": 0.550000011920929,
+                "y": 0.25999999046325684
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "camo_mtx3_zulu_pat"
+        },
+        {
+            "patternCamoImage": "camo_mtx3_massacre_pat",
+            "patternOffset": {
+                "x": 0.18000000715255737,
+                "y": 0.3799999952316284
+            },
+            "patternScale": 2.0,
+            "solidCamoImage": "t6_camo_zombies_solid"
+        }
+    ],
+    "patternBaseImage": "camo_off_pattern",
+    "solidBaseImage": "camo_off_solid"
+}
