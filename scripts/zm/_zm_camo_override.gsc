@@ -93,6 +93,8 @@ get_camo_based_on_weapon(weapon)
         return 52;
     else if(IsSubStr(weapon, "beretta"))
         return 53;
+    else if(IsSubStr(weapon, "ray"))
+        return 54;
 
 
 

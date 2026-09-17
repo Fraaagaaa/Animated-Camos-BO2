@@ -12,7 +12,6 @@ material,camo/camo_scarh/mtl_ac_scarh
 material,camo/camo_remington/mtl_ac_remington
 material,mc/mtl_t6_wpn_claymore
 material,camo/camo_ak74u/mtl_ac_ak74u
-//material,mc/mtl_viewarm_zom_farmgirl
 material,camo/camo_stg/mtl_ac_stg
 material,camo/camo_ballista/mtl_ac_ballista
 material,camo/camo_b23r/mtl_ac_b23r
@@ -22,3 +21,4 @@ material,mc/mtl_t6_wpn_zmb_staff_revive
 material,mc/mtl_t6_wpn_zmb_staff
 material,mc/mtl_t6_wpn_zmb_staff_upg
 material,mc/mtl_t6_wpn_zmb_staff_tips
+material,camo/camo_raygun/mtl_ac_raygun
