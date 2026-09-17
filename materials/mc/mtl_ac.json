@@ -7,79 +7,7 @@
     "constants": [
         {
             "literal": [
-<<<<<<< HEAD:materials/mc/mtl_ac.json
                 17.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Heat_Intensity"
-        },
-        {
-            "literal": [
-                17.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Ember_Intensity"
-        },
-        {
-            "literal": [
-                4.079999923706055,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Flicker_Min"
-        },
-        {
-            "literal": [
-                4.079999923706055,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Flicker_Max"
-=======
-                0.0,
-                3.75,
-                5.0,
-                1.0
-            ],
-            "name": "Inside_Color"
->>>>>>> 3657f728856ae7d02c3f25013ab77b667300b052:materials/mc/mtl_viewarm_zom_farmgirl.json
-        },
-        {
-            "literal": [
-                1.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Gloss_Level"
-        },
-        {
-            "literal": [
-                0.30000001192092896,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Inside_Detail_Intensity"
-        },
-        {
-            "literal": [
-                1.090000033378601,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Outside_Detail_Intensity"
-        },
-        {
-            "literal": [
-                3.990000009536743,
                 0.0,
                 0.0,
                 1.0
@@ -88,7 +16,7 @@
         },
         {
             "literal": [
-                0.5,
+                17.0,
                 0.0,
                 0.0,
                 1.0
@@ -199,13 +127,8 @@
     "gameFlags": [
         "10"
     ],
-<<<<<<< HEAD:materials/mc/mtl_ac.json
     "layeredSurfaceTypes": 536870925,
     "sortKey": 4,
-=======
-    "layeredSurfaceTypes": 536870919,
-    "sortKey": 40,
->>>>>>> 3657f728856ae7d02c3f25013ab77b667300b052:materials/mc/mtl_viewarm_zom_farmgirl.json
     "stateBits": [
         {
             "alphaTest": "gt0",
@@ -310,28 +233,17 @@
         -1,
         3
     ],
-<<<<<<< HEAD:materials/mc/mtl_ac.json
     "stateFlags": 121,
     "surfaceFlags": 13631488,
     "surfaceTypeBits": 4096,
     "techniqueSet": "mc_sw4_3d_weapon_camo_anim_glow_930950j2",
-=======
-    "stateFlags": 21,
-    "surfaceFlags": 7340032,
-    "surfaceTypeBits": 64,
-    "techniqueSet": "mc_sw4_3d_char_ghost2_noscript_954f9few",
->>>>>>> 3657f728856ae7d02c3f25013ab77b667300b052:materials/mc/mtl_viewarm_zom_farmgirl.json
     "textureAtlas": {
         "columns": 1,
         "rows": 1
     },
     "textures": [
         {
-<<<<<<< HEAD:materials/mc/mtl_ac.json
             "image": "an94ember",
-=======
-            "image": "c_gen_target_edgeeffect2_h",
->>>>>>> 3657f728856ae7d02c3f25013ab77b667300b052:materials/mc/mtl_viewarm_zom_farmgirl.json
             "isMatureContent": false,
             "name": "Detail_Swatch_2",
             "samplerState": {
@@ -344,26 +256,9 @@
             "semantic": "colorMap"
         },
         {
-<<<<<<< HEAD:materials/mc/mtl_ac.json
             "image": "ac_nml",
-=======
-            "image": "c_gen_target_edgeeffect3_h",
->>>>>>> 3657f728856ae7d02c3f25013ab77b667300b052:materials/mc/mtl_viewarm_zom_farmgirl.json
             "isMatureContent": false,
-            "name": "Detail_Swatch_1",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "colorMap"
-        },
-        {
-            "image": "viewarm_n",
-            "isMatureContent": false,
-            "name": "Normal_Map",
+            "name": "Camo_Detail_Map",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -374,7 +269,6 @@
             "semantic": "normalMap"
         },
         {
-<<<<<<< HEAD:materials/mc/mtl_ac.json
             "image": "~-gcamo_code_spc",
             "isMatureContent": false,
             "name": "Weapon_Specular_Map",
@@ -403,9 +297,9 @@
             "semantic": "colorMap"
         },
         {
-           "image": "camo_code_nml",
+            "image": "viewarm_n",
             "isMatureContent": false,
-            "name": "Weapon_Normal_Map",
+            "name": "Normal_Map",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -413,10 +307,10 @@
                 "filter": "aniso4x",
                 "mipMap": "linear"
             },
-            "semantic": "color1Map"
+            "semantic": "normalMap"
         },
         {
-            "image": "ac_gloss",
+            "image": "sw_radiant_default",
             "isMatureContent": false,
             "name": "SpecularAndGloss",
             "samplerState": {
@@ -447,11 +341,6 @@
             "nameEnd": "p",
             "nameHash": 3837378363,
             "nameStart": "H",
-=======
-            "image": "sw_radiant_default",
-            "isMatureContent": false,
-            "name": "radiantDiffuseMap",
->>>>>>> 3657f728856ae7d02c3f25013ab77b667300b052:materials/mc/mtl_viewarm_zom_farmgirl.json
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
