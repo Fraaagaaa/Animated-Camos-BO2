@@ -63,6 +63,7 @@ get_pack_a_punch_weapon_options( weapon )
 get_camo_based_on_weapon(weapon)
 {
     // Add here the new weapons
+    level.players[0] IPrintLn(weapon);
     if(IsSubStr(weapon, "an94"))
         return 39;
     else if(IsSubStr(weapon, "m14"))
@@ -99,6 +100,8 @@ get_camo_based_on_weapon(weapon)
         return 55;
     else if(IsSubStr(weapon, "olympia"))
         return 56;
+    else if(IsSubStr(weapon, "lsat"))
+        return 57;
 
 
 

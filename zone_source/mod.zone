@@ -8,5 +8,6 @@ stringtable,mp/weaponoptions_zm.csv
 
 script,scripts/zm/_zm_camo_override.gsc
 script,scripts/zm/zm_tomb/ac_origins.gsc
+script,scripts/zm/zm_buried/ac_buried.gsc
 script,scripts/zm/ui.gsc
 script,scripts/zm/cache.gsc
