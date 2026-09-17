@@ -3,43 +3,16 @@
     "_game": "t6",
     "_type": "material",
     "_version": 1,
-    "cameraRegion": "litOpaque",
+    "cameraRegion": "litTrans",
     "constants": [
         {
             "literal": [
+                0.0,
+                3.75,
                 5.0,
-                0.0,
-                0.0,
                 1.0
             ],
-            "name": "Heat_Intensity"
-        },
-        {
-            "literal": [
-                5.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Ember_Intensity"
-        },
-        {
-            "literal": [
-                4.079999923706055,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Flicker_Min"
-        },
-        {
-            "literal": [
-                4.079999923706055,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Flicker_Max"
+            "name": "Inside_Color"
         },
         {
             "literal": [
@@ -48,25 +21,34 @@
                 0.0,
                 1.0
             ],
-            "name": "Ember_Scale"
+            "name": "Gloss_Level"
         },
         {
             "literal": [
-                1.0,
+                0.30000001192092896,
                 0.0,
                 0.0,
                 1.0
             ],
-            "name": "ReflectionAmount"
+            "name": "Inside_Detail_Intensity"
         },
         {
             "literal": [
-                -0.015,
-                -0.015,
+                1.090000033378601,
+                0.0,
                 0.0,
                 1.0
             ],
-            "name": "Heat_Direction"
+            "name": "Outside_Detail_Intensity"
+        },
+        {
+            "literal": [
+                3.990000009536743,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "Overall_Intensity"
         },
         {
             "literal": [
@@ -75,7 +57,43 @@
                 0.0,
                 1.0
             ],
-            "name": "Seed_Value"
+            "name": "Inside_Add_Intensity"
+        },
+        {
+            "literal": [
+                0.7099999785423279,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "__rim_max"
+        },
+        {
+            "literal": [
+                -0.019999999552965164,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "__rim_min"
+        },
+        {
+            "literal": [
+                -0.029999999329447746,
+                0.009999999776482582,
+                0.0,
+                1.0
+            ],
+            "name": "Sparkle_Swatch_1_Speed"
+        },
+        {
+            "literal": [
+                5.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "Sparkle_Swatch_1_Scale"
         },
         {
             "literal": [
@@ -84,88 +102,101 @@
                 0.0,
                 1.0
             ],
-            "name": "SpecularAmount"
+            "name": "Specular_Level"
         },
         {
             "literal": [
-                -0.015,
-                -0.015,
+                0.05000000074505806,
+                0.05000000074505806,
                 0.0,
                 1.0
             ],
-            "name": "Ember_Direction"
+            "name": "Sparkle_Swatch_2_Speed"
         },
         {
             "literal": [
-                1.0,
+                0.5,
                 0.0,
                 0.0,
                 1.0
             ],
-            "name": "Heat_Scale"
+            "name": "Sparkle_Swatch_2_Scale"
+        },
+        {
+            "literal": [
+                0.8899999856948853,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "__inside_hole_min"
+        },
+        {
+            "literal": [
+                -0.3199999928474426,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "__inside_hole_max"
+        },
+        {
+            "literal": [
+                2.5,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "Normal_Map_Mapping_Type"
+        },
+        {
+            "literal": [
+                0.5,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "Swatches_Mapping_Type"
         }
     ],
     "contents": 1,
     "gameFlags": [
-        "10",
-        "CASTS_SHADOW"
+        "10"
     ],
     "layeredSurfaceTypes": 536870919,
-    "sortKey": 4,
+    "sortKey": 40,
     "stateBits": [
         {
-            "alphaTest": "disabled",
-            "blendOpAlpha": "disabled",
-            "blendOpRgb": "disabled",
-            "colorWriteAlpha": false,
-            "colorWriteRgb": false,
+            "alphaTest": "gt0",
+            "blendOpAlpha": "add",
+            "blendOpRgb": "add",
+            "colorWriteAlpha": true,
+            "colorWriteRgb": true,
             "cullFace": "back",
             "depthTest": "less_equal",
-            "depthWrite": true,
-            "dstBlendAlpha": "zero",
-            "dstBlendRgb": "zero",
+            "depthWrite": false,
+            "dstBlendAlpha": "one",
+            "dstBlendRgb": "invsrcalpha",
             "polygonOffset": "offset0",
             "polymodeLine": false,
-            "srcBlendAlpha": "one",
-            "srcBlendRgb": "one",
-            "stencilFront": {
-                "fail": "keep",
-                "func": "equal",
-                "pass": "keep",
-                "zfail": "keep"
-            }
+            "srcBlendAlpha": "invdestalpha",
+            "srcBlendRgb": "srcalpha"
         },
         {
-            "alphaTest": "disabled",
-            "blendOpAlpha": "disabled",
-            "blendOpRgb": "disabled",
-            "colorWriteAlpha": false,
-            "colorWriteRgb": false,
-            "cullFace": "back",
-            "depthTest": "less_equal",
-            "depthWrite": true,
-            "dstBlendAlpha": "zero",
-            "dstBlendRgb": "zero",
-            "polygonOffset": "offsetShadowmap",
-            "polymodeLine": false,
-            "srcBlendAlpha": "one",
-            "srcBlendRgb": "one"
-        },
-        {
-            "alphaTest": "disabled",
-            "blendOpAlpha": "disabled",
-            "blendOpRgb": "disabled",
+            "alphaTest": "gt0",
+            "blendOpAlpha": "add",
+            "blendOpRgb": "add",
             "colorWriteAlpha": true,
             "colorWriteRgb": true,
             "cullFace": "back",
             "depthTest": "less_equal",
             "depthWrite": true,
-            "dstBlendAlpha": "zero",
-            "dstBlendRgb": "zero",
+            "dstBlendAlpha": "one",
+            "dstBlendRgb": "invsrcalpha",
             "polygonOffset": "offset0",
             "polymodeLine": false,
-            "srcBlendAlpha": "one",
-            "srcBlendRgb": "one"
+            "srcBlendAlpha": "invdestalpha",
+            "srcBlendRgb": "srcalpha"
         },
         {
             "alphaTest": "disabled",
@@ -191,7 +222,7 @@
             "colorWriteRgb": true,
             "cullFace": "back",
             "depthTest": "less_equal",
-            "depthWrite": true,
+            "depthWrite": false,
             "dstBlendAlpha": "zero",
             "dstBlendRgb": "one",
             "polygonOffset": "offset0",
@@ -201,58 +232,56 @@
         }
     ],
     "stateBitsEntry": [
+        -1,
+        -1,
         0,
+        -1,
         1,
-        2,
-        -1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         -1,
         -1,
         -1,
         -1,
         -1,
         -1,
-        3,
+        2,
         -1,
         -1,
-        4
+        3
     ],
-    "stateFlags": 121,
+    "stateFlags": 21,
     "surfaceFlags": 7340032,
     "surfaceTypeBits": 64,
-    "techniqueSet": "mc_sw4_3d_weapon_camo_anim_glow_930950j2",
+    "techniqueSet": "mc_sw4_3d_char_ghost2_noscript_954f9few",
     "textureAtlas": {
         "columns": 1,
         "rows": 1
     },
     "textures": [
         {
-            "image": "mistyember",
+            "image": "c_gen_target_edgeeffect2_h",
             "isMatureContent": false,
-            "nameEnd": "r",
-            "nameHash": 123232637,
-            "nameStart": "E",
+            "name": "Detail_Swatch_2",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -263,9 +292,22 @@
             "semantic": "colorMap"
         },
         {
-            "image": "viewarm_zom_farmergirl_n",
+            "image": "c_gen_target_edgeeffect3_h",
             "isMatureContent": false,
-            "name": "Camo_Detail_Map",
+            "name": "Detail_Swatch_1",
+            "samplerState": {
+                "clampU": false,
+                "clampV": false,
+                "clampW": false,
+                "filter": "aniso4x",
+                "mipMap": "linear"
+            },
+            "semantic": "colorMap"
+        },
+        {
+            "image": "viewarm_n",
+            "isMatureContent": false,
+            "name": "Normal_Map",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -276,78 +318,9 @@
             "semantic": "normalMap"
         },
         {
-            "image": "~~-gviewarm_zom_farmergirl_s-~0fe53140",
+            "image": "sw_radiant_default",
             "isMatureContent": false,
-            "name": "Weapon_Specular_Map",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "color2Map"
-        },
-        {
-            "image": "ac_reveal_misty",
-            "isMatureContent": false,
-            "nameEnd": "p",
-            "nameHash": 886589909,
-            "nameStart": "R",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "colorMap"
-        },
-        {
-           "image": "camo_code_nml",
-            "isMatureContent": false,
-            "name": "Weapon_Normal_Map",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "color1Map"
-        },
-        {
-            "image": "ac_gloss",
-            "isMatureContent": false,
-            "name": "SpecularAndGloss",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "colorMap"
-        },
-        {
-            "image": "~-gviewarm_zom_farmergirl_c",
-            "isMatureContent": false,
-            "name": "colorMap",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "colorMap"
-        },
-        {
-            "image": "mistyheat",
-            "isMatureContent": false,
-            "nameEnd": "p",
-            "nameHash": 3837378363,
-            "nameStart": "H",
+            "name": "radiantDiffuseMap",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,

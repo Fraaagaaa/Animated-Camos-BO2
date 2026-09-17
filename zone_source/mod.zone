@@ -10,3 +10,8 @@ script,scripts/zm/_zm_camo_override.gsc
 script,scripts/zm/zm_tomb/ac_origins.gsc
 script,scripts/zm/ui.gsc
 script,scripts/zm/cache.gsc
+
+
+//xmodel,c_zom_suit_viewhands_al
+//xmodel,c_zom_player_cia_fb_al
+//material,custom/mtl_t6_afterlife

@@ -27,4 +27,6 @@ precachemodel("c_zom_tomb_dempsey_fb");
 precachemodel("c_zom_tomb_nikolai_fb");
 precachemodel("c_zom_tomb_richtofen_fb");
 precachemodel("c_zom_tomb_takeo_fb");
+precachemodel("c_zom_hazmat_viewhands_light");
+precachemodel("c_zom_player_cia_fb");
 }
