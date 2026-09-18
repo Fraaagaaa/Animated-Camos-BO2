@@ -112,7 +112,8 @@ get_camo_based_on_weapon(weapon)
         return 61;
     else if(IsSubStr(weapon, "barret"))
         return 62;
-    // barretm82_zm
+    else if(IsSubStr(weapon, "scrop"))
+        return 63;
 
     if ( "zm_prison" == level.script )
         return 40;
