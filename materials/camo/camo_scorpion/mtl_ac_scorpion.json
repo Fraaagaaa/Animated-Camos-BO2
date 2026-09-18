@@ -248,7 +248,7 @@
     },
     "textures": [
         {
-            "image": "scorpionember",
+            "image": "skorpionember",
             "isMatureContent": false,
             "nameEnd": "r",
             "nameHash": 123232637,
@@ -343,7 +343,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "scorpionheat",
+            "image": "skorpionheat",
             "isMatureContent": false,
             "nameEnd": "p",
             "nameHash": 3837378363,
