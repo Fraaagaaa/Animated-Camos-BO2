@@ -108,6 +108,8 @@ get_camo_based_on_weapon(weapon)
         return 59;
     else if(IsSubStr(weapon, "pdw"))
         return 60;
+    else if(IsSubStr(weapon, "dsr"))
+        return 61;
 
 
 
