@@ -8,6 +8,10 @@
                 {
                     "materialOverrides": [
                         {
+                            "baseMaterial": "mc/mtl_t6_attach_tritium_wht",
+                            "camoMaterial": "camo/camo_type25/mtl_ac_type25"
+                        },
+                        {
                             "baseMaterial": "mc/mtl_t6_wpn_ar_type95",
                             "camoMaterial": "camo/camo_type25/mtl_ac_type25"
                         },
@@ -17,6 +21,10 @@
                         },
                         {
                             "baseMaterial": "mc/mtl_t6_wpn_ar_type95_camo2",
+                            "camoMaterial": "camo/camo_type25/mtl_ac_type25"
+                        },
+                        {
+                            "baseMaterial": "mc/mtl_t6_wpn_ar_type95_camo3",
                             "camoMaterial": "camo/camo_type25/mtl_ac_type25"
                         }
                     ],
