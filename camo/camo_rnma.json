@@ -10,6 +10,10 @@
                         {
                             "baseMaterial": "mc/mtl_t6_wpn_pistol_rnma_camo1",
                             "camoMaterial": "camo/camo_rnma/mtl_ac_rnma"
+                        },
+                        {
+                            "baseMaterial": "mc/mtl_t6_wpn_pistol_rnma_camo2",
+                            "camoMaterial": "camo/camo_rnma/mtl_ac_rnma"
                         }
                     ],
                     "shaderConsts": [
