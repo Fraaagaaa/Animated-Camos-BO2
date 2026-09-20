@@ -8,6 +8,10 @@
                 {
                     "materialOverrides": [
                         {
+                            "baseMaterial": "mc/mtl_t5_weapon_sog_knife",
+                            "camoMaterial": "camo/camo_ballisticknife/mtl_ac_ballisticknife"
+                        },
+                        {
                             "baseMaterial": "mc/mtl_ballistic_knife",
                             "camoMaterial": "camo/camo_ballisticknife/mtl_ac_ballisticknife"
                         }
