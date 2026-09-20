@@ -8,6 +8,14 @@
                 {
                     "materialOverrides": [
                         {
+                            "baseMaterial": "mc/mtl_t6_wpn_zmb_mg08",
+                            "camoMaterial": "camo/camo_mg08/mtl_ac_mg08"
+                        },
+                        {
+                            "baseMaterial": "mc/mtl_t6_wpn_zmb_mg08_mag",
+                            "camoMaterial": "camo/camo_mg08/mtl_ac_mg08"
+                        },
+                        {
                             "baseMaterial": "mc/mtl_t6_wpn_zmb_mg08_camo",
                             "camoMaterial": "camo/camo_mg08/mtl_ac_mg08"
                         },
