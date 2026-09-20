@@ -130,6 +130,10 @@ get_camo_based_on_weapon(weapon)
         return 70;
     else if(IsSubStr(weapon, "hk"))
         return 71;
+    else if(IsSubStr(weapon, "judge"))
+        return 72;
+    else if(IsSubStr(weapon, "ka"))
+        return 73;
 
     if ( "zm_prison" == level.script )
         return 40;
