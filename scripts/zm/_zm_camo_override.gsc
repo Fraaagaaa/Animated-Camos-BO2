@@ -124,6 +124,8 @@ get_camo_based_on_weapon(weapon)
         return 67;
     else if(IsSubStr(weapon, "fal"))
         return 68;
+    else if(IsSubStr(weapon, "gal"))
+        return 69;
 
     if ( "zm_prison" == level.script )
         return 40;
