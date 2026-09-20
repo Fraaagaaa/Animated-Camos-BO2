@@ -8,6 +8,14 @@
                 {
                     "materialOverrides": [
                         {
+                            "baseMaterial": "mc/mtl_t6_attach_tritium_grn",
+                            "camoMaterial": "camo/camo_m8a1/mtl_ac_m8a1"
+                        },
+                        {
+                            "baseMaterial": "mc/mtl_t6_wpn_ar_xm8",
+                            "camoMaterial": "camo/camo_m8a1/mtl_ac_m8a1"
+                        },
+                        {
                             "baseMaterial": "mc/mtl_t6_wpn_ar_xm8_detail",
                             "camoMaterial": "camo/camo_m8a1/mtl_ac_m8a1"
                         },
