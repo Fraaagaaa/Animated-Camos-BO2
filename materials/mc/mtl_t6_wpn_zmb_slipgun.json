@@ -248,7 +248,7 @@
     },
     "textures": [
         {
-            "image": "minigunember",
+            "image": "sliquifireember",
             "isMatureContent": false,
             "nameEnd": "r",
             "nameHash": 123232637,
@@ -343,7 +343,7 @@
             "semantic": "colorMap"
         },
         {
-            "image": "minigunheat",
+            "image": "sliquifireheat",
             "isMatureContent": false,
             "nameEnd": "p",
             "nameHash": 3837378363,
