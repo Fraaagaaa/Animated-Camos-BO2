@@ -8,6 +8,10 @@
                 {
                     "materialOverrides": [
                         {
+                            "baseMaterial": "mc/mtl_t6_wpn_lmg_rpd_mount_camo1",
+                            "camoMaterial": "camo/camo_rpd/mtl_ac_rpd"
+                        },
+                        {
                             "baseMaterial": "mc/mtl_t6_wpn_lmg_rpd_camo1",
                             "camoMaterial": "camo/camo_rpd/mtl_ac_rpd"
                         },
