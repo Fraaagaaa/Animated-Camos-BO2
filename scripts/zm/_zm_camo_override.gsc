@@ -120,6 +120,8 @@ get_camo_based_on_weapon(weapon)
         return 65;
     else if(IsSubStr(weapon, "ball"))
         return 66;
+    else if(IsSubStr(weapon, "chicom"))
+        return 67;
 
     if ( "zm_prison" == level.script )
         return 40;
