@@ -7,25 +7,25 @@
     "constants": [
         {
             "literal": [
-                1.0,
+                17.0,
                 0.0,
                 0.0,
                 1.0
             ],
-            "name": "Reflection_Amount"
+            "name": "Heat_Intensity"
         },
         {
             "literal": [
-                10.0,
+                17.0,
                 0.0,
                 0.0,
                 1.0
             ],
-            "name": "Emissiver_Amount"
+            "name": "Ember_Intensity"
         },
         {
             "literal": [
-                0.8500000238418579,
+                4.079999923706055,
                 0.0,
                 0.0,
                 1.0
@@ -34,7 +34,7 @@
         },
         {
             "literal": [
-                1.100000023841858,
+                4.079999923706055,
                 0.0,
                 0.0,
                 1.0
@@ -52,26 +52,17 @@
         },
         {
             "literal": [
-                0.75,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "name": "Diffuse_Normal_Height_Facing"
-        },
-        {
-            "literal": [
                 1.0,
                 0.0,
                 0.0,
                 1.0
             ],
-            "name": "Specular_Amount"
+            "name": "ReflectionAmount"
         },
         {
             "literal": [
-                0.019999999552965164,
-                0.029999999329447746,
+                -0.015,
+                -0.015,
                 0.0,
                 1.0
             ],
@@ -79,7 +70,7 @@
         },
         {
             "literal": [
-                2.0,
+                0.5,
                 0.0,
                 0.0,
                 1.0
@@ -88,8 +79,17 @@
         },
         {
             "literal": [
-                -0.009999999776482582,
-                -0.019999999552965164,
+                1.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "SpecularAmount"
+        },
+        {
+            "literal": [
+                -0.015,
+                -0.015,
                 0.0,
                 1.0
             ],
@@ -110,7 +110,7 @@
         "10",
         "CASTS_SHADOW"
     ],
-    "layeredSurfaceTypes": 536870916,
+    "layeredSurfaceTypes": 536870925,
     "sortKey": 4,
     "stateBits": [
         {
@@ -239,18 +239,20 @@
         4
     ],
     "stateFlags": 121,
-    "surfaceFlags": 4194304,
-    "surfaceTypeBits": 8,
-    "techniqueSet": "mc_sw4_3d_char_skin_emberglow_7q60f126",
+    "surfaceFlags": 13631488,
+    "surfaceTypeBits": 4096,
+    "techniqueSet": "mc_sw4_3d_weapon_camo_anim_glow_930950j2",
     "textureAtlas": {
         "columns": 1,
         "rows": 1
     },
     "textures": [
         {
-            "image": "~-gmtl_t6_wpn_zmb_blundergat_~82d280ec",
+            "image": "minigunember",
             "isMatureContent": false,
-            "name": "EmberGlow_Reveal_Map",
+            "nameEnd": "r",
+            "nameHash": 123232637,
+            "nameStart": "E",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -261,10 +263,36 @@
             "semantic": "colorMap"
         },
         {
-            "image": "c_gen_arm_rim_mask_c",
+            "image": "ac_nml",
             "isMatureContent": false,
-            "nameEnd": "k",
-            "nameHash": 2247950716,
+            "name": "Camo_Detail_Map",
+            "samplerState": {
+                "clampU": false,
+                "clampV": false,
+                "clampW": false,
+                "filter": "aniso4x",
+                "mipMap": "linear"
+            },
+            "semantic": "normalMap"
+        },
+        {
+            "image": "~-gcamo_code_spc",
+            "isMatureContent": false,
+            "name": "Weapon_Specular_Map",
+            "samplerState": {
+                "clampU": false,
+                "clampV": false,
+                "clampW": false,
+                "filter": "aniso4x",
+                "mipMap": "linear"
+            },
+            "semantic": "color2Map"
+        },
+        {
+            "image": "ac_reveal",
+            "isMatureContent": false,
+            "nameEnd": "p",
+            "nameHash": 886589909,
             "nameStart": "R",
             "samplerState": {
                 "clampU": false,
@@ -276,7 +304,20 @@
             "semantic": "colorMap"
         },
         {
-            "image": "~~-gmtl_t6_wpn_zmb_blundergat~9ca08353",
+           "image": "camo_code_nml",
+            "isMatureContent": false,
+            "name": "Weapon_Normal_Map",
+            "samplerState": {
+                "clampU": false,
+                "clampV": false,
+                "clampW": false,
+                "filter": "aniso4x",
+                "mipMap": "linear"
+            },
+            "semantic": "color1Map"
+        },
+        {
+            "image": "ac_gloss",
             "isMatureContent": false,
             "name": "SpecularAndGloss",
             "samplerState": {
@@ -286,25 +327,12 @@
                 "filter": "aniso4x",
                 "mipMap": "linear"
             },
-            "semantic": "specularMap"
+            "semantic": "colorMap"
         },
         {
-            "image": "mtl_t6_wpn_zmb_blundergat_acid_nml",
+            "image": "ac_col",
             "isMatureContent": false,
-            "name": "Normal_Map",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "normalMap"
-        },
-        {
-            "image": "mtl_t6_wpn_zmb_blundergat_acid_ember",
-            "isMatureContent": false,
-            "name": "Ember_Map",
+            "name": "colorMap",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
@@ -315,22 +343,11 @@
             "semantic": "colorMap"
         },
         {
-            "image": "glowcycle_random_01_c",
+            "image": "minigunheat",
             "isMatureContent": false,
-            "name": "Heat_Map",
-            "samplerState": {
-                "clampU": false,
-                "clampV": false,
-                "clampW": false,
-                "filter": "aniso4x",
-                "mipMap": "linear"
-            },
-            "semantic": "colorMap"
-        },
-        {
-            "image": "~-gmtl_t6_wpn_zmb_blundergat_acid_col",
-            "isMatureContent": false,
-            "name": "Diffuse_Map",
+            "nameEnd": "p",
+            "nameHash": 3837378363,
+            "nameStart": "H",
             "samplerState": {
                 "clampU": false,
                 "clampV": false,
