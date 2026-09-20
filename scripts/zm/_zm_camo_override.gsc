@@ -138,6 +138,14 @@ get_camo_based_on_weapon(weapon)
         return 74;
     else if(IsSubStr(weapon, "mg"))
         return 75;
+    else if(IsSubStr(weapon, "py"))
+        return 76;
+    else if(IsSubStr(weapon, "mini"))
+        return 77;
+    else if(IsSubStr(weapon, "rpd"))
+        return 78;
+    else if(IsSubStr(weapon, "rnma"))
+        return 79;
 
     if ( "zm_prison" == level.script )
         return 40;
