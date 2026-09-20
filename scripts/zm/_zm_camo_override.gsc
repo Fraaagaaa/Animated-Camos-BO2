@@ -146,6 +146,10 @@ get_camo_based_on_weapon(weapon)
         return 78;
     else if(IsSubStr(weapon, "rnma"))
         return 79;
+    else if(IsSubStr(weapon, "saiga"))
+        return 80;
+    else if(IsSubStr(weapon, "sar"))
+        return 81;
 
     if ( "zm_prison" == level.script )
         return 40;
