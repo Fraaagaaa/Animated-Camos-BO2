@@ -10,6 +10,7 @@
 init()
 {
 	replaceFunc(getfunction("maps/mp/zm_tomb_main_quest", "watch_for_player_pickup_staff"), ::watch_for_player_pickup_staff);
+	replaceFunc(getfunction("maps/mp/zm_tomb_dig", "take_old_weapon_and_give_new"), ::take_old_weapon_and_give_new);
 }
 
 watch_for_player_pickup_staff()
@@ -39,7 +40,6 @@ watch_for_player_pickup_staff()
             self setinvisibletoall();
 
             player weapon_give(self.weapname);
-            // player giveweapon( self.weapname, undefined, undefined); //, 0, self get_pack_a_punch_weapon_options( self.weapname ) );
             player switchtoweapon( self.weapname );
             clip_size = weaponclipsize( self.weapname );
             player setweaponammoclip( self.weapname, clip_size );
@@ -53,4 +53,15 @@ watch_for_player_pickup_staff()
             maps\mp\zm_tomb_craftables::set_player_staff( self.weapname, player );
         }
     }
+}
+
+take_old_weapon_and_give_new( current_weapon, weapon )
+{
+    a_weapons = self getweaponslistprimaries();
+
+    if ( isdefined( a_weapons ) && a_weapons.size >= get_player_weapon_limit( self ) )
+        self takeweapon( current_weapon );
+
+    self weapon_give( weapon );
+    self switchtoweapon( weapon );
 }

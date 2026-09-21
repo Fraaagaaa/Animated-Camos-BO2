@@ -5,7 +5,7 @@
 #include maps\mp\zombies\_zm_weapons;
 #include maps\mp\zm_buried;
 
-#include scripts\zm\_zm_camo_override;
+#include scripts\zm\animatedcamos;
 
 init()
 {
