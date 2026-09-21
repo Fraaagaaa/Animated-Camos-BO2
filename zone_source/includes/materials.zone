@@ -72,3 +72,15 @@ material,mc/mtl_t6_wpn_minigun_ammo_noalpha
 material,mc/mtl_t6_wpn_minigun_thermal
 
 material,mc/mtl_t6_wpn_zmb_slipgun
+
+material,mc/mtl_t6_wpn_grenade_emp
+material,mc/mtl_t6_wpn_grenade_emp_glass
+material,mc/mtl_t6_wpn_grenade_emp_glass_world
+material,mc/mtl_t6_wpn_grenade_frag
+material,mc/mtl_t6_wpn_grenade_semtex
+material,mc/mtl_weapon_m203_grenade
+
+material,mc/mtl_t6_wpn_zmb_tomahawk
+material,mc/mtl_t6_wpn_zmb_tomahawk_alpha
+material,mc/mtl_t6_wpn_zmb_tomahawk_alpha_world
+material,mc/mtl_t6_wpn_zmb_tomahawk_blade

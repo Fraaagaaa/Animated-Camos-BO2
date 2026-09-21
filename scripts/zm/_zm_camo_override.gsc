@@ -14,6 +14,9 @@ init()
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "get_pack_a_punch_weapon_options"), ::get_pack_a_punch_weapon_options);
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weapons", "weapon_give"), ::weapon_give);
 	replaceFunc(getfunction("maps/mp/zombies/_zm_utility", "give_start_weapon"), ::give_start_weapon);
+	replaceFunc(getfunction("maps/mp/zombies/_zm_laststand", "laststand_give_pistol"), ::laststand_give_pistol);
+	replaceFunc(getfunction("maps/mp/zombies/_zm_laststand", "suicide_trigger_think"), ::suicide_trigger_think);
+
 }
 
 get_pack_a_punch_weapon_options( weapon )
@@ -339,3 +342,135 @@ take_old_weapon_and_give_new( current_weapon, weapon )
     self giveweapon( weapon, 0, self get_pack_a_punch_weapon_options( weapon ) );
     self switchtoweapon( weapon );
 }
+
+laststand_give_pistol()
+{
+    assert( isdefined( self.laststandpistol ) );
+    assert( self.laststandpistol != "none" );
+
+    if ( isdefined( level.zombie_last_stand ) )
+        [[ level.zombie_last_stand ]]();
+    else
+    {
+        self giveweapon(self.laststandpistol, 0, self get_pack_a_punch_weapon_options(self.laststandpistol));
+        self givemaxammo(self.laststandpistol);
+        self switchtoweapon(self.laststandpistol);
+    }
+}
+
+suicide_trigger_think()
+{
+    self endon( "disconnect" );
+    self endon( "zombified" );
+    self endon( "stop_revive_trigger" );
+    self endon( "player_revived" );
+    self endon( "bled_out" );
+    self endon( "fake_death" );
+    level endon( "end_game" );
+    level endon( "stop_suicide_trigger" );
+    self thread [[getfunction("maps/mp/zombies/_zm_weapons", "clean_up_suicide_hud_on_end_game")]]();
+    self thread [[getfunction("maps/mp/zombies/_zm_weapons", "clean_up_suicide_hud_on_bled_out")]]();
+
+    while ( self usebuttonpressed() )
+        wait 1;
+
+    if ( !isdefined( self.suicideprompt ) )
+        return;
+
+    while ( true )
+    {
+        wait 0.1;
+
+        if ( !isdefined( self.suicideprompt ) )
+            continue;
+
+        self.suicideprompt settext( &"ZOMBIE_BUTTON_TO_SUICIDE" );
+
+        if ( !self [[getfunction("maps/mp/zombies/_zm_weapons", "is_suiciding")]]() )
+            continue;
+
+        self.pre_suicide_weapon = self getcurrentweapon();
+
+        self giveweapon(level.suicide_weapon, 0, self get_pack_a_punch_weapon_options(level.suicide_weapon));
+        self switchtoweapon( level.suicide_weapon );
+        duration = self docowardswayanims();
+        suicide_success = [[getfunction("maps/mp/zombies/_zm_weapons", "suicide_do_suicide")]](duration);
+        self.laststand = undefined;
+        self takeweapon( level.suicide_weapon );
+
+        if ( suicide_success )
+        {
+            self notify( "player_suicide" );
+            wait_network_frame();
+            self maps\mp\zombies\_zm_stats::increment_client_stat( "suicides" );
+            self [[getfunction("maps/mp/zombies/_zm_weapons", "bleed_out")]]();
+            return;
+        }
+        
+        self switchtoweapon( self.pre_suicide_weapon );
+        self.pre_suicide_weapon = undefined;
+    }
+}
+
+// revive_trigger_think()
+// {
+//     self endon( "disconnect" );
+//     self endon( "zombified" );
+//     self endon( "stop_revive_trigger" );
+//     level endon( "end_game" );
+//     self endon( "death" );
+
+//     while ( true )
+//     {
+//         wait 0.1;
+//         self.revivetrigger sethintstring( "" );
+//         players = get_players();
+
+//         for ( i = 0; i < players.size; i++ )
+//         {
+//             d = 0;
+//             d = self depthinwater();
+
+//             if ( players[i] can_revive( self ) || d > 20 )
+//             {
+//                 self.revivetrigger setrevivehintstring( &"ZOMBIE_BUTTON_TO_REVIVE_PLAYER", self.team );
+//                 break;
+//             }
+//         }
+
+//         for ( i = 0; i < players.size; i++ )
+//         {
+//             reviver = players[i];
+
+//             if ( self == reviver || !reviver is_reviving( self ) )
+//                 continue;
+
+//             gun = reviver getcurrentweapon();
+//             assert( isdefined( gun ) );
+
+//             if ( gun == level.revive_tool )
+//                 continue;
+
+//             reviver giveweapon( level.revive_tool );
+//             reviver switchtoweapon( level.revive_tool );
+//             reviver setweaponammostock( level.revive_tool, 1 );
+//             revive_success = reviver revive_do_revive( self, gun );
+//             reviver revive_give_back_weapons( gun );
+
+//             if ( isplayer( self ) )
+//                 self allowjump( 1 );
+
+//             self.laststand = undefined;
+
+//             if ( revive_success )
+//             {
+//                 if ( isplayer( self ) )
+//                     maps\mp\zombies\_zm_chugabud::player_revived_cleanup_chugabud_corpse();
+
+//                 self thread revive_success( reviver );
+//                 self cleanup_suicide_hud();
+//                 return;
+//             }
+//         }
+//     }
+// }
