@@ -4,9 +4,12 @@
 #include maps\mp\gametypes_zm\_weapons;
 #include maps\mp\zombies\_zm_weapons;
 #include maps\mp\zm_buried;
+
+#include scripts\zm\_zm_camo_override;
+
 init()
 {
-	// replaceFunc(getfunction("maps/mp/zm_buried", "player_give_lsat"), ::player_give_lsat);
+	replaceFunc(getfunction("maps/mp/zm_buried", "player_give_lsat"), ::player_give_lsat);
 }
 
 player_give_lsat()
@@ -22,7 +25,7 @@ player_give_lsat()
 
     self thread achievement_watcher_lsat_upgrade();
 
-    self weapon_give( "lsat_zm" );
+    self giveweapon("lsat_zm", 0, self get_pack_a_punch_weapon_options("lsat_zm"));
     maps\mp\zombies\_zm_weapons::acquire_weapon_toggle( "lsat_zm", self );
     self givestartammo( "lsat_zm" );
     self switchtoweapon( "lsat_zm" );
