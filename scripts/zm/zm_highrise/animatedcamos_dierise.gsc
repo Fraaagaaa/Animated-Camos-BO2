@@ -3,7 +3,7 @@
 #include maps\mp\gametypes_zm\_hud_util;
 #include maps\mp\gametypes_zm\_weapons;
 #include maps\mp\zombies\_zm_weapons;
-#include maps\mp\zm_buried;
+
 init()
 {
 	replaceFunc(getfunction("maps/mp/zombies/_zm_weap_slipgun", "pickupslipgun"), ::pickupslipgun);
