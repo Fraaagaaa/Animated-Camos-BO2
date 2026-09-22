@@ -1,167 +1,167 @@
 General:
-    ac_col.iwi
-    ac_gloss.iwi
-    ac_nml.iwi
-    ac_reveal.iwi
-    ac_reveal_misty.iwi
+- ac_col.iwi
+- ac_gloss.iwi
+- ac_nml.iwi
+- ac_reveal.iwi
+- ac_reveal_misty.iwi
 AK47:
-    ak47ember.iwi
-    ak47heat.iwi
+- ak47ember.iwi
+- ak47heat.iwi
 AK74U:
-    ak74uember.iwi
-    ak74uheat.iwi
+- ak74uember.iwi
+- ak74uheat.iwi
 AN94:
-    an94ember.iwi
-    an94heat.iwi
+- an94ember.iwi
+- an94heat.iwi
 B23R:
-    b23rember.iwi
-    b23rheat.iwi
+- b23rember.iwi
+- b23rheat.iwi
 Ballista:
-    ballistaember.iwi
-    ballistaheat.iwi
+- ballistaember.iwi
+- ballistaheat.iwi
 Ballistic knife:
-    ballisticknifeember.iwi
-    ballisticknifeheat.iwi
+- ballisticknifeember.iwi
+- ballisticknifeheat.iwi
 Barret:
-    barretember.iwi
-    barretheat.iwi
+- barretember.iwi
+- barretheat.iwi
 Blundergat:
-    blundergatember.iwi
-    blundergatheat.iwi
+- blundergatember.iwi
+- blundergatheat.iwi
 Chicom:
-    chicomember.iwi
-    chicomheat.iwi
+- chicomember.iwi
+- chicomheat.iwi
 Claymore:
-    claymore.iwi
+- claymore.iwi
 DSR50:
-    dsr50ember.iwi
-    dsr50heat.iwi
+- dsr50ember.iwi
+- dsr50heat.iwi
 Executioner:
-    executionerember.iwi
-    executionerheat.iwi
+- executionerember.iwi
+- executionerheat.iwi
 FAL:
-    falember.iwi
-    falheat.iwi
+- falember.iwi
+- falheat.iwi
 Five Seven:
-    fivesevenember.iwi
-    fivesevenheat.iwi
+- fivesevenember.iwi
+- fivesevenheat.iwi
 Galil:
-    galilember.iwi
-    galilheat.iwi
+- galilember.iwi
+- galilheat.iwi
 HAMR:
-    hamrember.iwi
-    hamrheat.iwi
+- hamrember.iwi
+- hamrheat.iwi
 Jet Gun:
-    jetgunember.iwi
-    jetgunheat.iwi
+- jetgunember.iwi
+- jetgunheat.iwi
 KAP:
-    kapember.iwi
-    kapheat.iwi
+- kapember.iwi
+- kapheat.iwi
 KSG:
-    ksgember.iwi
-    ksgheat.iwi
+- ksgember.iwi
+- ksgheat.iwi
 LSAT:
-    lsatember.iwi
-    lsatheat.iwi
+- lsatember.iwi
+- lsatheat.iwi
 M1216:
-    m1216ember.iwi
-    m1216heat.iwi
+- m1216ember.iwi
+- m1216heat.iwi
 M14:
-    m14ember.iwi
-    m14heat.iwi
+- m14ember.iwi
+- m14heat.iwi
 M16:
-    m16ember.iwi
-    m16heat.iwi
+- m16ember.iwi
+- m16heat.iwi
 M1911:
-    m1911ember.iwi
-    m1911heat.iwi
+- m1911ember.iwi
+- m1911heat.iwi
 M27:
-    m27ember.iwi
-    m27heat.iwi
+- m27ember.iwi
+- m27heat.iwi
 M8A1:
-    m8a1ember.iwi
-    m8a1heat.iwi
+- m8a1ember.iwi
+- m8a1heat.iwi
 Mauser:
-    mauserember.iwi
-    mauserheat.iwi
+- mauserember.iwi
+- mauserheat.iwi
 MG08:
-    mg08ember.iwi
-    mg08heat.iwi
+- mg08ember.iwi
+- mg08heat.iwi
 Minigun:
-    minigunember.iwi
-    minigunheat.iwi
+- minigunember.iwi
+- minigunheat.iwi
 Ray Gun MK2:
-    mk2ember.iwi
-    mk2heat.iwi
+- mk2ember.iwi
+- mk2heat.iwi
 MP40:
-    mp40ember.iwi
-    mp40heat.iwi
+- mp40ember.iwi
+- mp40heat.iwi
 MP5:
-    mp5ember.iwi
-    mp5heat.iwi
+- mp5ember.iwi
+- mp5heat.iwi
 MTAR:
-    mtarember.iwi
-    mtarheat.iwi
+- mtarember.iwi
+- mtarheat.iwi
 Olympia:
-    olympiaember.iwi
-    olympiaheat.iwi
+- olympiaember.iwi
+- olympiaheat.iwi
 PDW:
-    pdwember.iwi
-    pdwheat.iwi
+- pdwember.iwi
+- pdwheat.iwi
 Python:
-    pythonember.iwi
-    pythonheat.iwi
+- pythonember.iwi
+- pythonheat.iwi
 Raygun:
-    raygunember.iwi
-    raygunheat.iwi
+- raygunember.iwi
+- raygunheat.iwi
 Remington:
-    remingtonember.iwi
-    remingtonheat.iwi
+- remingtonember.iwi
+- remingtonheat.iwi
 Revolver new model army:
-    rnmaember.iwi
-    rnmaheat.iwi
+- rnmaember.iwi
+- rnmaheat.iwi
 RPD:
-    rpdember.iwi
-    rpdheat.iwi
+- rpdember.iwi
+- rpdheat.iwi
 RPG:
-    rpgember.iwi
-    rpgheat.iwi
+- rpgember.iwi
+- rpgheat.iwi
 S12:
-    s12ember.iwi
-    s12heat.iwi
+- s12ember.iwi
+- s12heat.iwi
 SCAR-H
-    scarember.iwi
-    scarheat.iwi
+- scarember.iwi
+- scarheat.iwi
 Skorpion:
-    skorpionember.iwi
-    skorpionheat.iwi
+- skorpionember.iwi
+- skorpionheat.iwi
 Sliquifire:
-    sliquifireember.iwi
-    sliquifireheat.iwi
+- sliquifireember.iwi
+- sliquifireheat.iwi
 Paralyzer:
-    slowgunember.iwi
-    slowgunheat.iwi
+- slowgunember.iwi
+- slowgunheat.iwi
 SMR:
-    smrember.iwi
-    smrheat.iwi
+- smrember.iwi
+- smrheat.iwi
 Staffs:
-    staffember.iwi
-    staffheat.iwi
+- staffember.iwi
+- staffheat.iwi
 STG:
-    stgember.iwi
-    stgheat.iwi
+- stgember.iwi
+- stgheat.iwi
 SVU:
-    svuember.iwi
-    svuheat.iwi
+- svuember.iwi
+- svuheat.iwi
 Thompson:
-    thompsonember.iwi
-    thompsonheat.iwi
+- thompsonember.iwi
+- thompsonheat.iwi
 Type25:
-    type25ember.iwi
-    type25heat.iwi
+- type25ember.iwi
+- type25heat.iwi
 UZI:
-    uziember.iwi
-    uziheat.iwi
+- uziember.iwi
+- uziheat.iwi
 War Machine:
-    warmachineember.iwi
-    warmachineheat.iwi
+- warmachineember.iwi
+- warmachineheat.iwi
