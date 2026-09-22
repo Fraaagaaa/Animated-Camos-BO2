@@ -3,9 +3,8 @@ set MOD_NAME=zm_animatedcamos
 set GAME_FOLDER=C:\Program Files (x86)\Steam\steamapps\common\Call of Duty Black Ops II
 set OAT_BASE=C:\OAT
 set MOD_BASE=%cd%
+set "WINRAR=C:\Program Files\WinRAR\WinRAR.exe"
 
-::Below is an example of assets needed to load in order to build the mod. 
-::Each line is seperated by a "^".
 "%OAT_BASE%\linker.exe" ^
 -v ^
 --load "%GAME_FOLDER%\zone\all\zm_transit.ff" ^
@@ -52,10 +51,13 @@ set MOD_BASE=%cd%
 
 set err=%ERRORLEVEL%
 
+"%WINRAR%" a -afzip -r "zone\mod.iwd" "images\*"
+
 if %err% EQU 0 (
     if not exist "%LOCALAPPDATA%\Plutonium\storage\t6\mods\%MOD_NAME%" mkdir "%LOCALAPPDATA%\Plutonium\storage\t6\mods\%MOD_NAME%"
 
     XCOPY "%MOD_BASE%\zone\mod.ff" "%LOCALAPPDATA%\Plutonium\storage\t6\mods\%MOD_NAME%\mod.ff" /Y
+    XCOPY "%MOD_BASE%\zone\mod.iwd" "%LOCALAPPDATA%\Plutonium\storage\t6\mods\%MOD_NAME%\mod.iwd" /Y
     XCOPY "%MOD_BASE%\mod.json" "%LOCALAPPDATA%\Plutonium\storage\t6\mods\%MOD_NAME%\mod.json" /Y
 
     echo DONE!
