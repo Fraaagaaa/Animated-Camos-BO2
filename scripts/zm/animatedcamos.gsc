@@ -25,8 +25,6 @@ init()
 
 
 	replaceFunc(getfunction("maps/mp/zombies/_zm_tombstone", "restore_weapon_for_tombstone"), ::restore_weapon_for_tombstone);
-	replaceFunc(getfunction("maps/mp/zombies/_zm_perks", "upgrade_knuckle_crack_begin"), ::upgrade_knuckle_crack_begin);
-	replaceFunc(getfunction("maps/mp/zombies/_zm_perks", "perk_give_bottle_begin"), ::perk_give_bottle_begin);
 	replaceFunc(getfunction("maps/mp/zombies/_zm_chugabud", "restore_weapon_for_chugabud"), ::restore_weapon_for_chugabud);
 	replaceFunc(getfunction("maps/mp/zombies/_zm", "last_stand_pistol_swap"), ::last_stand_pistol_swap);
 	replaceFunc(getfunction("maps/mp/gametypes_zm/_weaponobjects", "pickup"), ::pickup);
@@ -499,86 +497,6 @@ restore_weapon_for_tombstone( player, weapon_name )
         player change_melee_weapon( weapon_name, "none" );
         self.tombstone_melee_weapons[weapon_name] = 0;
     }
-}
-
-upgrade_knuckle_crack_begin()
-{
-    self increment_is_drinking();
-    self disable_player_move_states( 1 );
-    primaries = self getweaponslistprimaries();
-    gun = self getcurrentweapon();
-    weapon = level.machine_assets["packapunch"].weapon;
-
-    if ( gun != "none" && !is_placeable_mine( gun ) && !is_equipment( gun ) )
-    {
-        self notify( "zmb_lost_knife" );
-        self takeweapon( gun );
-    }
-    else
-        return;
-
-    self weapon_give( weapon );
-    self switchtoweapon( weapon );
-    return gun;
-}
-
-perk_give_bottle_begin( perk )
-{
-    self increment_is_drinking();
-    self disable_player_move_states( 1 );
-    gun = self getcurrentweapon();
-    weapon = "";
-
-    switch ( perk )
-    {
-        case " _upgrade":
-        case "specialty_armorvest":
-            weapon = level.machine_assets["juggernog"].weapon;
-            break;
-        case "specialty_quickrevive":
-        case "specialty_quickrevive_upgrade":
-            weapon = level.machine_assets["revive"].weapon;
-            break;
-        case "specialty_fastreload":
-        case "specialty_fastreload_upgrade":
-            weapon = level.machine_assets["speedcola"].weapon;
-            break;
-        case "specialty_rof":
-        case "specialty_rof_upgrade":
-            weapon = level.machine_assets["doubletap"].weapon;
-            break;
-        case "specialty_longersprint":
-        case "specialty_longersprint_upgrade":
-            weapon = level.machine_assets["marathon"].weapon;
-            break;
-        case "specialty_flakjacket":
-        case "specialty_flakjacket_upgrade":
-            weapon = level.machine_assets["divetonuke"].weapon;
-            break;
-        case "specialty_deadshot":
-        case "specialty_deadshot_upgrade":
-            weapon = level.machine_assets["deadshot"].weapon;
-            break;
-        case "specialty_additionalprimaryweapon":
-        case "specialty_additionalprimaryweapon_upgrade":
-            weapon = level.machine_assets["additionalprimaryweapon"].weapon;
-            break;
-        case "specialty_scavenger":
-        case "specialty_scavenger_upgrade":
-            weapon = level.machine_assets["tombstone"].weapon;
-            break;
-        case "specialty_finalstand":
-        case "specialty_finalstand_upgrade":
-            weapon = level.machine_assets["whoswho"].weapon;
-            break;
-    }
-
-    if ( isdefined( level._custom_perks[perk] ) && isdefined( level._custom_perks[perk].perk_bottle ) )
-        weapon = level._custom_perks[perk].perk_bottle;
-
-    self weapon_give( weapon );
-    self switchtoweapon( weapon );
-    return gun;
 }
 
 restore_weapon_for_chugabud( player, weapon_name )
