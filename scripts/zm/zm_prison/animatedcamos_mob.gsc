@@ -3,6 +3,8 @@
 #include maps\mp\gametypes_zm\_hud_util;
 #include maps\mp\gametypes_zm\_weapons;
 #include maps\mp\zombies\_zm_weapons;
+#include maps\mp\zombies\_zm_utility;
+#include maps\mp\zm_alcatraz_utility;
 
 init()
 {
@@ -24,8 +26,7 @@ take_old_weapon_and_give_reward( current_weapon, reward_weapon, weapon_limit_ove
             self takeweapon( current_weapon );
     }
 
-    // in case I ever switch to camo
-    self give_weapon( reward_weapon );
+    self weapon_give( reward_weapon );
     self switchtoweapon( reward_weapon );
     flag_set( "warden_blundergat_obtained" );
     self playsoundtoplayer( "vox_brutus_easter_egg_872_0", self );
